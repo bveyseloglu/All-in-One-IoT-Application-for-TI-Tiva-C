@@ -11,7 +11,7 @@ This application acquires temperature from ADC (internal temperature sensor) usi
 * Timer hardware interrupt adds the ADC value to the array. Then it posts the SWI.
 * The SWI checks if the array is full (if every 20 samples are in the array). If the array is full, it calculates the average and put in a global variable called averageTemp. Initializes the array. 
 * httpTask is the task that connects api.openweathermap.org to retrieve the current weather temperature. Initially it will wait for a semaphore. (This semaphore is posted in the netIPAddrHook function)
-* When httpTask finishes its job with openweather, a semaphore is posted to activate tcpSocketTask where a TCP Scoket connection is made to SocketTest server program to send the average temperature and the one obtained from openweathermap. 
+* When httpTask finishes its job with openweather, a semaphore is posted to activate tcpSocketTask where a TCP Socket connection is made to SocketTest server program to send the average temperature and the one obtained from openweathermap. 
 
 ## License
 Licensed under MIT License. 
