@@ -14,7 +14,7 @@ This application acquires temperature from ADC (internal temperature sensor) usi
 * When httpTask finishes its job with openweather, a semaphore is posted to activate tcpSocketTask where a TCP Socket connection is made to SocketTest server program to send the average temperature and the one obtained from openweathermap. 
 
 ## Notes
-You need to register api.openweathermap.org to get an API key. Also, don't forget to change the MAC adress from the header file.
+You need to register an account from api.openweathermap.org to get an API key. Also, don't forget to change the MAC adress from the header file.
 
 ## License
 Licensed under MIT License. 
