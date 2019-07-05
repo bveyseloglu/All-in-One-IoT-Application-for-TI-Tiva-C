@@ -1,5 +1,5 @@
 ## Simpe-IoT-Application-for-TI-Tiva-C
-Simple weather send and recieve application for TM4C1294XL. This project demonstrates multithreading, networking, clock, sensor I/O, ADC, software interrupt, and semaphore on TI-RTOS at the same time.
+Simple weather send and recieve application for TI TM4C1294XL. This project demonstrates multithreading, networking, clocks, sensor I/O, ADC, software interrupts, and semaphores on TI-RTOS together.
 
 ## Project Description
 This application acquires temperature from ADC (internal temperature sensor) using a timer interrupt every 100 milliseconds, takes the average for 2 seconds (i.e. 20 samples) in a software interrupt. Every 15 seconds, receive the current temperature from api.openweathermap.org in a task. Once the temperature is retrieved from OpenWeather, posts a semaphore for sending the average internal temperature sensor and the one retrieved from openweather map to TestSocket.exe on 5011 port. 
