@@ -1,4 +1,4 @@
-## Simpe-IoT-Application-for-TI-Tiva-C
+## All-in-One-IoT-Application-for-TI-Tiva-C
 Simple weather send and recieve application for TI TM4C1294XL. This project demonstrates multithreading, networking, clocks, sensor I/O, ADC, software interrupts, hardware interrupts, and semaphores on TI-RTOS at the same time..
 
 ## Project Description
